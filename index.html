@@ -18,26 +18,29 @@
 
     <!-- sb -->
     <div class="battery">
-        <img src="assets/img/battery.png" alt="">
+        <img src="assets/img/battery.png" alt="" width="15px" height="15px">
+        <div id="battery-level" class="battery-level">100</div>
     </div>
     <div class="wifi">
         <img src="assets/img/wifi.png" alt="" srcset="">
     </div>
-    <div class="jam"></div>
+    <div id="clock" class="jam">00:00</div>
 
     <!-- functional -->
      <div class="power-button"></div>
-     <div class="dnd-button"></div>
+     <div id="dnd-button" class="dnd-button"></div>
      <div class="volume-up-button"></div>
      <div class="volume-down-button"></div>
     
     <!-- system -->
     <div class="gesture"></div>
-    <div class="dynamic-island">
-        <div class="dynamic-camera">
+    <div id="dynamic-island" class="dynamic-island">
+        <div id="dynamic-camera" class="dynamic-camera">
             <div class="dynamic-camera-tick"></div>
         </div>
     </div>
     <div class="recent-apps"></div>
+
+    <script src="script/logic.js"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SFPTB';
+  src: url('assets/font/SF-Pro-Text-Black.otf') format('opentype');
+}
+
 body{
     padding: 0;
     margin: 50;
@@ -52,6 +57,8 @@ body{
 }
 
 .dynamic-camera {
+    display: flex;
+    position: absolute;
     width: 8px;
     height: 8px;
     background-color: #0b040b;
@@ -61,6 +68,8 @@ body{
 }
 
 .dynamic-camera-tick {
+    position: absolute;
+    display: flex;
     width: 5px;
     height: 5px;
     border-radius: 50px;
@@ -121,11 +130,47 @@ body{
 .battery {
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 415px;
+    margin-left: 170px;
+    width: 15px;
+    height: 8px;
+}
+
+.battery img {
+    opacity: 0.7;
+}
+
+.battery-level {
+    display: flex;
+    position: absolute;
+    font-size: 4px;
+    color: white;
 }
 
 .wifi {
     display: flex;
     position: absolute;
+    margin-bottom: 415px;
+    margin-left: 135px;
+    width: 13px;
+    height: 13px;
+}
+
+.wifi img {
+    opacity: 0.7;
+}
+
+.jam {
+    margin-bottom: 415px;
+    margin-right: 150px;
+    font-size: 9px;
+    display: flex;
+    position: absolute;
+    color: #b4b4b4;
+    font-family: 'SFPTB', sans-serif;
+    font-weight: 700;
 }
 
 .recent-apps {
