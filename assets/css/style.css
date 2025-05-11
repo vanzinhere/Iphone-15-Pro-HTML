@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 50;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.housing {
+    background-color: greenyellow;
+    width: 230px;
+    height: 450px;
+    border-radius: 30px;
+    outline: 5px #2d2d2d solid;
+}
+
+.bezzel {
+    background-color: black;
+    width: 230px;
+    height: 450px;
+    border-radius: 30px;
+    outline: 3px black solid;
+}
+
+.wallpaper img {
+    width: 230px;
+    height: 450px;
+    border-radius: 30px;
+}
+
+.gesture {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 80px;
+    height: 3px;
+    margin-top: 432px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dynamic-island {
+    display: flex;
+    position: absolute;
+    background-color: black;
+    width: 70px;
+    height: 20px;
+    border-radius: 50px;
+    margin-bottom: 416px;
+    cursor: pointer;
+}
+
+.dynamic-camera {
+    width: 8px;
+    height: 8px;
+    background-color: #0b040b;
+    border-radius: 50px;
+    margin-top: 6px;
+    margin-left: 55px;
+}
+
+.dynamic-camera-tick {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    margin-top: 2px;
+    margin-left: 1px;
+    background-color: #01071c;
+}
+
+.power-button {
+    display: flex;
+    position: absolute;
+    background-color: #2d2d2d;
+    width: 5px;
+    height: 50px;
+    border-radius: 100px;
+    margin-left: 240px;
+    margin-bottom: 85px;
+    cursor: pointer;
+}
+
+.dnd-button {
+    display: flex;
+    position: absolute;
+    background-color: #2d2d2d;
+    width: 5px;
+    height: 25px;
+    border-radius: 100px;
+    margin-right: 240px;
+    margin-bottom: 255px;
+    cursor: pointer;
+}
+
+.volume-up-button {
+    display: flex;
+    position: absolute;
+    background-color: #2d2d2d;
+    width: 5px;
+    height: 35px;
+    border-radius: 100px;
+    margin-right: 240px;
+    margin-bottom: 150px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.volume-down-button {
+    display: flex;
+    position: absolute;
+    background-color: #2d2d2d;
+    width: 5px;
+    height: 35px;
+    border-radius: 100px;
+    margin-right: 240px;
+    margin-bottom: 55px;
+    cursor: pointer;
+}
+
+.battery {
+    display: flex;
+    position: absolute;
+}
+
+.wifi {
+    display: flex;
+    position: absolute;
+}
+
+.recent-apps {
+    display: flex;
+    position: absolute;
+    background-color: rgba(29, 29, 29, 0.5); /* Latar belakang warna hitam dengan transparansi */
+    backdrop-filter: blur(10px); /* Efek blur */
+    width: 215px;
+    height: 52px;
+    border-radius: 18px;
+    margin-top: 370px;
+    box-shadow: 2 2 2 2px black;
+}

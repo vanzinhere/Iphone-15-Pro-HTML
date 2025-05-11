@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Koneksi Jaringan</title>
+</head>
+<body>
+    <h1>Status Koneksi Jaringan</h1>
+    <p id="koneksiStatus">Menunggu informasi...</p>
+
+    <script>
+        function cekKoneksi() {
+            const statusElement = document.getElementById('koneksiStatus');
+            
+            if ('connection' in navigator) {
+                const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+                const connectionType = connection.effectiveType;
+                
+                if (connectionType === 'wifi') {
+                    statusElement.textContent = 'Pengguna menggunakan Wi-Fi';
+                } else if (connectionType === 'cellular') {
+                    statusElement.textContent = 'Pengguna menggunakan paket data seluler';
+                } else {
+                    statusElement.textContent = 'Jenis koneksi tidak diketahui';
+                }
+            } else {
+                statusElement.textContent = 'API Network Information tidak didukung di browser ini';
+            }
+        }
+
+        // Panggil fungsi cekKoneksi saat halaman dimuat
+        cekKoneksi();
+    </script>
+</body>
+</html>
